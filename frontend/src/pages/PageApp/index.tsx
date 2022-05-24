@@ -8,9 +8,18 @@ import Header from '../../components/template/Header';
 import Home from '../../components/template/Home';
 import Services from '../../components/template/Services';
 import Testimonials from '../../components/template/Testimonials';
+import { backToTop, checkFooterTop } from '../../main';
 
 
 const PageApp: React.FC = () => {
+  /* When scroll */
+  window.addEventListener('scroll', () => {
+    // changeHeaderWhenScroll();
+    // activateMenuAtCurrentSection()
+    backToTop();
+    checkFooterTop();
+  })
+
   return (
     <>
       <Header />

@@ -108,7 +108,7 @@
 
 /* Back to top button */
 const backToTopButton = document.querySelector('.back-to-top')
-const backToTop = () => {
+export const backToTop = () => {
   if (window.scrollY >= 550) {
     backToTopButton.classList.add('show')
   } else {
@@ -117,7 +117,7 @@ const backToTop = () => {
 }
 
 
-function checkFooterTop() {
+export function checkFooterTop() {
   const checkpoint = window.scrollY + (window.innerHeight / 8) * 7.5
 
   const footerTop = document.getElementById('footer').offsetTop
@@ -132,10 +132,3 @@ function checkFooterTop() {
 
 
 
-/* When scroll */
-window.addEventListener('scroll', () => {
-  // changeHeaderWhenScroll();
-  // activateMenuAtCurrentSection()
-  backToTop();
-  checkFooterTop();
-}) 
