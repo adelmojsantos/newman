@@ -21,21 +21,21 @@
   /* === ANIMATION === */
   @keyframes text-glowing-blue {
     0% {
-      text-shadow: 0 0 1px var(--body-color), 0 0 1px var(--body-color), 0 0 1px var(--body-color), 0 0 1px #5595e4, 0 0 5px #5595e4, 0 0 2px #5595e4, 0 0 10px #5595e4, 0 0 10px #5595e4
+      text-shadow: 0 0 1px var(--text-color-light), 0 0 1px var(--text-color-light), 0 0 1px var(--text-color-light), 0 0 1px var(--text-color), 0 0 5px var(--text-color), 0 0 2px var(--text-color), 0 0 10px var(--text-color), 0 0 10px var(--text-color)
     }
 
     to {
-      text-shadow: 0 0 .5px var(--body-color), 0 0 .5px var(--body-color), 0 0 .5px var(--body-color), 0 0 .5px #5595e4, 0 0 5px #5595e4, 0 0 .5px #5595e4, 0 0 5px #5595e4, 0 0 2px #5595e4
+      text-shadow: 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color), 0 0 5px var(--text-color), 0 0 .5px var(--text-color), 0 0 5px var(--text-color), 0 0 2px var(--text-color)
     }
   }
 
   @keyframes c-glowing-blue {
     0% {
-      box-shadow: 0 0 5px #8fbff8, 0 0 5px #8fbff8, 0 0 15px #8fbff8, 0 0 20px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7
+      box-shadow: 0 0 5px var(--body-color), 0 0 5px var(--body-color), 0 0 15px var(--body-color), 0 0 20px var(--base-color), 0 0 10px var(--base-color), 0 0 10px var(--base-color), 0 0 10px var(--base-color), 0 0 10px var(--base-color)
     }
 
     to {
-      box-shadow: 0 0 2.5px #8fbff8, 0 0 2.5px #8fbff8, 0 0 7.5px #8fbff8, 0 0 10px #0271F7, 0 0 5px #0271F7, 0 0 5px #0271F7, 0 0 5px #0271F7, 0 0 2px #0271F7
+      box-shadow: 0 0 2.5px var(--body-color), 0 0 2.5px var(--body-color), 0 0 7.5px var(--body-color), 0 0 10px var(--base-color), 0 0 5px var(--base-color), 0 0 5px var(--base-color), 0 0 5px var(--base-color), 0 0 2px var(--base-color)
     }
   }
 
@@ -195,6 +195,10 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+
+  nav .logo {
+    text-shadow: 0 0 .5px var(--base-color), 0 0 .5px var(--base-color), 0 0 .5px var(--base-color), 0 0 .5px var(--text-color-light), 0 0 5px var(--text-color-light), 0 0 .5px var(--text-color-light), 0 0 5px var(--text-color-light), 0 0 2px var(--text-color-light)
   }
 
   nav ul li {
@@ -507,12 +511,26 @@
 
   /*=== COURSE ===*/
   #course .cards .card {
+    border: 0.1rem solid var(--base-color-second);
     animation: c-glowing-blue .3s ease-in-out infinite;
     animation-direction: alternate;
   }
 
   #course .cards .card p {
     margin-bottom: 1.5rem;
+  }
+
+  #course .cards .card .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #course .cards .card .button i {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+    margin-block: auto;
+    color: var(--text-color-light);
   }
 
   /*=== FOOTER ===*/
@@ -530,9 +548,9 @@
     color: var(--text-color-light);
   }
 
-  /*  footer .logo {
-    margin-bottom: 1.5rem;
-  } */
+  footer .logo:hover {
+    text-shadow: 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color-light), 0 0 .5px var(--text-color), 0 0 5px var(--text-color), 0 0 .5px var(--text-color), 0 0 5px var(--text-color), 0 0 2px var(--text-color)
+  }
 
   .logo-grid {
     display: grid;

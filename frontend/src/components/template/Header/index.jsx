@@ -32,7 +32,6 @@ const Header = () => {
     }
   })
 
-
   function OnOpenMenu() {
     document.querySelector('#header nav').classList.add('show')
   }
@@ -64,7 +63,7 @@ const Header = () => {
             <li><a onClick={() => OnCloseMenu()} className="title" href="#home">Início</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#about">Sobre</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#services">Serviços</a></li>
-            <li><a onClick={() => OnCloseMenu()} className="title" href="#course">Curso Barbeiro</a></li>
+            <li><a onClick={() => OnCloseMenu()} className="title" href="#course">New Man Academy</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#contact">Contato</a></li>
           </ul>
         </div>

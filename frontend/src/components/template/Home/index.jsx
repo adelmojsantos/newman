@@ -14,8 +14,8 @@ const Home = () => {
             alt="Homem tendo a barba aparada" />
         </div>
         <div className="text">
-          <h2 className="title">Estilo New Man</h2>
-          <p>Um local exclusivo em Franca, para todos os estilos de cortes e gostos.</p>
+          <h2 className="title">Estilo diferenciado ou clássico</h2>
+          <p>A New Man tem profissionais especializados em todos os estilos de cortes. Cabelo e barba alinhados em cortes clássicos e modernos.</p>
           <p>Saiba também sobre o exclusivo curso de barbeiro clicando <a href="#course">aqui</a>.</p>
           <a href="#contact" className="button">Agendar um horário</a>
         </div>
