@@ -18,23 +18,48 @@
     list-style: none;
   }
 
+  /* === ANIMATION === */
+  @keyframes text-glowing-blue {
+    0% {
+      text-shadow: 0 0 1px var(--body-color), 0 0 1px var(--body-color), 0 0 1px var(--body-color), 0 0 1px #5595e4, 0 0 5px #5595e4, 0 0 2px #5595e4, 0 0 10px #5595e4, 0 0 10px #5595e4
+    }
+
+    to {
+      text-shadow: 0 0 .5px var(--body-color), 0 0 .5px var(--body-color), 0 0 .5px var(--body-color), 0 0 .5px #5595e4, 0 0 5px #5595e4, 0 0 .5px #5595e4, 0 0 5px #5595e4, 0 0 2px #5595e4
+    }
+  }
+
+  @keyframes c-glowing-blue {
+    0% {
+      box-shadow: 0 0 5px #8fbff8, 0 0 5px #8fbff8, 0 0 15px #8fbff8, 0 0 20px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7, 0 0 10px #0271F7
+    }
+
+    to {
+      box-shadow: 0 0 2.5px #8fbff8, 0 0 2.5px #8fbff8, 0 0 7.5px #8fbff8, 0 0 10px #0271F7, 0 0 5px #0271F7, 0 0 5px #0271F7, 0 0 5px #0271F7, 0 0 2px #0271F7
+    }
+  }
+
   /*=== ??? ===*/
   :root {
     --header-height: 4.5rem;
 
     /* colors */
-    --hue: 159;
+    --hue: 202;
     /* HSL color mode */
-    --base-color: hsl(var(--hue), 36%, 57%);
-    --base-color-second: hsl(var(--hue), 40%, 63%);
-    --base-color-second: #9e7bc6;
+    /* --base-color: hsl(var(--hue), 36%, 57%); */
+    --base-color: hsl(var(--hue), 21%, 23%);
+    /* --base-color-second: hsl(var(--hue), 40%, 63%); */
+    --base-color-second: hsl(calc(var(--hue) + 4), 15%, 47%);
+    /* --base-color-second: hsl(var(--hue), 50%, 89%); */
 
-    --base-color-alt: hsl(var(--hue) 57% 53%);
+    /* --base-color-alt: hsl(var(--hue) 57% 53%); */
+    --base-color-alt: hsl(var(--hue) 42% 10%);
     --title-color: hsl(calc(var(--hue)), 41%, 10%);
-    --text-color: hsl(0, 0%, 46%);
-    --text-color-light: hsl(0 0% 98%);
-    /* --body-color: hsl(calc(var(--hue) - 100), 100%, 96%); */
-    --body-color: hsl(calc(var(--hue) + 30) 95%, 90%);
+    /* --text-color: hsl(0, 0%, 46%); */
+    --text-color: hsl(70, 10%, 40%);
+    --text-color-light: hsl(0, 0%, 98%);
+
+    --body-color: hsl(0, 0%, 98%);
 
     /* fonts */
     --title-font-size: 1.875rem;
@@ -153,6 +178,10 @@
 
   .logo span {
     color: var(--base-color);
+  }
+
+  .logo i {
+    font-size: 2.5rem;
   }
 
   .logo-alt span {
@@ -349,7 +378,7 @@
     margin-inline: 1.5rem;
   }
 
-  /*=== ABOUT ===*/
+  /*=== SERVICES ===*/
   .cards.grid {
     gap: 1.5rem;
   }
@@ -361,6 +390,7 @@
     border-radius: 0.25rem 0.25rem 0 0;
 
     text-align: center;
+    background: white;
   }
 
   .card i {
@@ -473,10 +503,19 @@
 
   #contact ul li i {
     color: var(--base-color);
-    /*=== CONTACT ===*/
   }
 
-  /*=== CONTACT ===*/
+  /*=== COURSE ===*/
+  #course .cards .card {
+    animation: c-glowing-blue .3s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+
+  #course .cards .card p {
+    margin-bottom: 1.5rem;
+  }
+
+  /*=== FOOTER ===*/
   footer {
     background: var(--base-color);
   }
@@ -485,42 +524,54 @@
     padding-block: 4rem;
   }
 
-  /*  footer .logo {
+  footer .logo {
     display: inline-block;
     margin-bottom: 1.5rem;
-  } */
-  footer .logo {
     color: var(--text-color-light);
+  }
+
+  /*  footer .logo {
+    margin-bottom: 1.5rem;
+  } */
+
+  .logo-grid {
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: 10% 1fr;
+    grid-template-columns: 1fr 90%;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "A B"
-      "A C";
+      'A B'
+      'A C';
     align-items: center;
-    line-height: 0.6;
-    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    line-height: 0.65;
+    text-align: left;
+
   }
 
   .col-a {
-    grid-area: "A";
+    grid-area: A;
   }
 
+  /*  .col-a i {
+    font-size: 5rem;
+  } */
+
   .col-b {
-    grid-area: "B";
+    grid-area: B;
+    display: flex;
+    justify-content: flex-start;
   }
 
   .col-c {
-    grid-area: "C";
-  }
-
-  footer .logo span {
-    color: var(--title-color);
+    grid-area: C;
+    display: flex;
+    justify-content: flex-start;
   }
 
   footer .logo i {
-    font-size: 2rem;
-    color: var(--title-color);
+    font-size: 3.1rem;
+    color: var(--body-color);
   }
 
   footer .brand p {
@@ -582,7 +633,7 @@
 
   .back-to-top.show.color-alt {
     background: var(--body-color);
-    color: var(--text-color);
+    color: var(--base-color);
   }
 
   /* === === MEDIA QUERIES === === */
@@ -671,6 +722,14 @@
 
     .card {
       padding-inline: 3rem;
+    }
+
+    /* Courses */
+
+    #course .cards {
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-content: center;
     }
 
     /* TESTIMONIALS */

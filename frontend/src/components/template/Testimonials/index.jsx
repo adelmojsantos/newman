@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Testimonials: React.FC = () => {
+const Testimonials = () => {
   return (
     <section id="testimonials" className="section">
       <div className="container">

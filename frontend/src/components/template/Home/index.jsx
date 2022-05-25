@@ -1,19 +1,22 @@
 import React from 'react';
 
+import HomePicture from '../../../assets/photos/home-picture.jpg'
+
 // import { Container } from './styles';
 
-const Home: React.FC = () => {
+const Home = () => {
   return (
     <section className="section" id="home">
       <div className="container grid">
         <div className="image">
           <img
-            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmFyYmVyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500"
+            src={HomePicture}
             alt="Homem tendo a barba aparada" />
         </div>
         <div className="text">
-          <h2 className="title">Saúde natural para os seus cabelos</h2>
-          <p>Um salão exclusivo em Franca, especializado em tratamentos naturais.</p>
+          <h2 className="title">Estilo New Man</h2>
+          <p>Um local exclusivo em Franca, para todos os estilos de cortes e gostos.</p>
+          <p>Saiba também sobre o exclusivo curso de barbeiro clicando <a href="#course">aqui</a>.</p>
           <a href="#contact" className="button">Agendar um horário</a>
         </div>
       </div>

@@ -2,12 +2,13 @@ import React from 'react';
 import About from '../../components/template/About';
 import BackToTop from '../../components/template/BackToTop';
 import Contact from '../../components/template/Contact';
+import Courses from '../../components/template/Courses';
 import Footer from '../../components/template/Footer';
 import Header from '../../components/template/Header';
 import Home from '../../components/template/Home';
 import Services from '../../components/template/Services';
 
-const PageApp: React.FC = () => {
+const PageApp = () => {
   return (
     <>
       <Header />
@@ -20,6 +21,8 @@ const PageApp: React.FC = () => {
         <div className="divider-1"></div>
         {/* <Testimonials />
         <div className="divider-2"></div> */}
+        <Courses />
+        <div className="divider-2"></div>
         <Contact />
         <div className="divider-1"></div>
       </main>

@@ -2,7 +2,7 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-const About: React.FC = () => {
+const About = () => {
   return (
     <section id="about" className="section">
       <div className="container grid">
