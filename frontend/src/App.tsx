@@ -1,15 +1,30 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { backToTop, changeHeaderWhenScroll, checkFooterTop } from './main';
 import PageApp from './pages/PageApp';
 
 function App() {
-  function csl() {
-    const f = document.querySelector('.back-to-top')
-    console.log(f)
-  }
-
+  // const [offset, setOffset] = useState(0);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     changeHeaderWhenScroll();
+  //     // activateMenuAtCurrentSection()
+  //     backToTop();
+  //     checkFooterTop();
+  //   })
+  // }, [])
   useEffect(() => {
-    csl()
-  })
+    const onScroll = () => {
+      changeHeaderWhenScroll();
+      // activateMenuAtCurrentSection()
+      backToTop();
+      checkFooterTop();
+    };
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
     <PageApp />
   );

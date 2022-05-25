@@ -9,9 +9,7 @@ const Services: React.FC = () => {
         <header>
           <h2 className="title">Serviços</h2>
           <p className="subtitle">
-            Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou clientes de inúmeros países com
-            seus tratamentos exclusivos
-            e totalmente naturais
+            A <strong>Newman Barbershop</strong> oferece serviços de alta qualidade e estilo, com as últimas tendências de cortes e tratamentos.
           </p>
         </header>
         <div className="cards grid">

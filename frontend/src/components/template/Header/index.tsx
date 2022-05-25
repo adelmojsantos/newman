@@ -7,14 +7,16 @@ const Header: React.FC = () => {
     <header id="header">
       <nav className="container">
         {/* <a href="#" className="logo">newman<span>barbershop</span>.</a>  */}
-        <a href="#home" className="logo">beauty<span>salon</span>.</a>
+        <a href="#home" className="logo">
+          <i className="icon-bearded-man"></i>  New<span>man</span> Barbershop
+        </a>
 
         <div className="menu">
           <ul className="grid">
             <li><a className="title" href="#home">Início</a></li>
             <li><a className="title" href="#about">Sobre</a></li>
             <li><a className="title" href="#services">Serviços</a></li>
-            <li><a className="title" href="#testimonials">Depoimentos</a></li>
+            {/* <li><a className="title" href="#testimonials">Depoimentos</a></li> */}
             <li><a className="title" href="#contact">Contato</a></li>
           </ul>
         </div>

@@ -23,18 +23,18 @@
     --header-height: 4.5rem;
 
     /* colors */
-    --hue: 250;
+    --hue: 159;
     /* HSL color mode */
-    --base-color: hsl(var(--hue), 83%, 63%);
-    /* --base-color-second: hsl(var(--hue) 65% 88%); */
-    --base-color-second: hsl(var(--hue), 22%, 83%);
+    --base-color: hsl(var(--hue), 36%, 57%);
+    --base-color-second: hsl(var(--hue), 40%, 63%);
+    --base-color-second: #9e7bc6;
 
     --base-color-alt: hsl(var(--hue) 57% 53%);
-    /* --title-color: hsl(var(--hue) 41% 10%); */
-    --title-color: hsl(var(--hue), 33%, 15%, 1);
-    --text-color: hsl(0 0% 46%);
+    --title-color: hsl(calc(var(--hue)), 41%, 10%);
+    --text-color: hsl(0, 0%, 46%);
     --text-color-light: hsl(0 0% 98%);
-    --body-color: hsl(0 0% 98%);
+    /* --body-color: hsl(calc(var(--hue) - 100), 100%, 96%); */
+    --body-color: hsl(calc(var(--hue) + 30) 95%, 90%);
 
     /* fonts */
     --title-font-size: 1.875rem;
@@ -137,6 +137,8 @@
 
   #header.scroll {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--body-color);
+
   }
 
   main {
@@ -483,9 +485,42 @@
     padding-block: 4rem;
   }
 
-  footer .logo {
+  /*  footer .logo {
     display: inline-block;
     margin-bottom: 1.5rem;
+  } */
+  footer .logo {
+    color: var(--text-color-light);
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas:
+      "A B"
+      "A C";
+    align-items: center;
+    line-height: 0.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .col-a {
+    grid-area: "A";
+  }
+
+  .col-b {
+    grid-area: "B";
+  }
+
+  .col-c {
+    grid-area: "C";
+  }
+
+  footer .logo span {
+    color: var(--title-color);
+  }
+
+  footer .logo i {
+    font-size: 2rem;
+    color: var(--title-color);
   }
 
   footer .brand p {

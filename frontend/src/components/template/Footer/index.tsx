@@ -7,8 +7,18 @@ const Footer: React.FC = () => {
     <footer className="section" id="footer">
       <div className="container grid">
         <div className="brand">
-          <a href="#home" className="logo logo-alt">beauty<span>salon</span>.</a>
-          <p>©2021 Beautysalon.</p>
+          <a href="#home" className="logo grid logo-alt">
+            <div className="col-a">
+              <i className="icon-bearded-man"></i>
+            </div>
+            <div className="col-b">
+              <span>Newman</span>
+            </div>
+            <div className="col-c">
+              Barbershop
+            </div>
+          </a>
+          <p>©2022 Newman Barbershop.</p>
           <p>Todos os direitos reservados.</p>
         </div>
         <div className="social grid">

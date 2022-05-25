@@ -19,17 +19,18 @@
 
 // /* Adicionar sombras ao header quando der scroll */
 
-// const header = document.querySelector('#header')
-// const navHeight = header.offsetHeight
+const header = document.querySelector("#header") as HTMLElement | null;
 
-// function changeHeaderWhenScroll() {
-
-//   if (window.scrollY >= navHeight) {
-//     header.classList.add('scroll')
-//   } else {
-//     header.classList.remove('scroll')
-//   }
-// }
+export function changeHeaderWhenScroll() {
+  if (header !== null) {
+    const navHeight = header.offsetHeight;
+    if (window.scrollY >= navHeight) {
+      header.classList.add("scroll");
+    } else {
+      header.classList.remove("scroll");
+    }
+  }
+}
 
 // /* Swiper - slide */
 // /* const swiper = new Swiper('.swiper', {
@@ -64,7 +65,6 @@
 //   footer .brand, footer .social
 // `, { interval: 100 }
 // )
-
 
 // /* Hover in the social links */
 // const socialLinks = document.querySelectorAll('footer .social a i')
@@ -107,28 +107,34 @@
 // }
 
 /* Back to top button */
-const backToTopButton = document.querySelector('.back-to-top')
-export const backToTop = () => {
-  if (window.scrollY >= 550) {
-    backToTopButton.classList.add('show')
-  } else {
-    backToTopButton.classList.remove('show')
-  }
-}
+const backToTopButton = document.querySelector(
+  ".back-to-top"
+) as HTMLElement | null;
 
+export const backToTop = () => {
+  if (backToTopButton !== null) {
+    if (window.scrollY >= 550) {
+      backToTopButton.classList.add("show");
+    } else {
+      backToTopButton.classList.remove("show");
+    }
+  }
+};
 
 export function checkFooterTop() {
-  const checkpoint = window.scrollY + (window.innerHeight / 8) * 7.5
+  const checkpoint = window.scrollY + (window.innerHeight / 8) * 7.5;
 
-  const footerTop = document.getElementById('footer').offsetTop
-  const footerStart = checkpoint > footerTop
+  const footer = document.getElementById("footer") as HTMLElement | null;
+  if (footer !== null) {
+    const footerTop = footer.offsetTop;
+    const footerStart = checkpoint > footerTop;
 
-  if (footerStart) {
-    backToTopButton.classList.add('color-alt')
-  } else {
-    backToTopButton.classList.remove('color-alt')
+    if (backToTopButton !== null) {
+      if (footerStart) {
+        backToTopButton.classList.add("color-alt");
+      } else {
+        backToTopButton.classList.remove("color-alt");
+      }
+    }
   }
 }
-
-
-

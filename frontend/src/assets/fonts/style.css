@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?3z6pf');
-  src:  url('fonts/icomoon.eot?3z6pf#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?3z6pf') format('truetype'),
-    url('fonts/icomoon.woff?3z6pf') format('woff'),
-    url('fonts/icomoon.svg?3z6pf#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?nza88i');
+  src:  url('fonts/icomoon.eot?nza88i#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nza88i') format('truetype'),
+    url('fonts/icomoon.woff?nza88i') format('woff'),
+    url('fonts/icomoon.svg?nza88i#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,42 +25,66 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-barber-razor:before {
+  content: "\e902";
+}
+.icon-beard:before {
+  content: "\e903";
+}
+.icon-bearded-man:before {
+  content: "\e904";
+}
+.icon-close:before {
+  content: "\e905";
+}
+.icon-cosmetic:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e907";
+}
+.icon-hair-salon:before {
+  content: "\e908";
+}
+.icon-instagram:before {
+  content: "\e909";
+}
+.icon-mail:before {
+  content: "\e90a";
+}
+.icon-man-hair:before {
+  content: "\e90b";
+}
+.icon-man-hairstyle:before {
+  content: "\e90c";
+}
+.icon-map-pin:before {
+  content: "\e90d";
+}
+.icon-menu:before {
+  content: "\e90e";
+}
+.icon-razor-blade:before {
+  content: "\e90f";
+}
+.icon-trim:before {
+  content: "\e910";
+}
+.icon-trimmer:before {
+  content: "\e911";
+}
+.icon-whatsapp:before {
+  content: "\e912";
+}
+.icon-woman-hair:before {
+  content: "\e913";
+}
+.icon-youtube:before {
+  content: "\e914";
+}
 .icon-arrow-up:before {
   content: "\e900";
 }
 .icon-phone:before {
   content: "\e901";
-}
-.icon-close:before {
-  content: "\e902";
-}
-.icon-cosmetic:before {
-  content: "\e903";
-}
-.icon-facebook:before {
-  content: "\e904";
-}
-.icon-instagram:before {
-  content: "\e905";
-}
-.icon-mail:before {
-  content: "\e906";
-}
-.icon-map-pin:before {
-  content: "\e907";
-}
-.icon-menu:before {
-  content: "\e908";
-}
-.icon-trim:before {
-  content: "\e909";
-}
-.icon-whatsapp:before {
-  content: "\e90a";
-}
-.icon-woman-hair:before {
-  content: "\e90b";
-}
-.icon-youtube:before {
-  content: "\e90c";
 }
