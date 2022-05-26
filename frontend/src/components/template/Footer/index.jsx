@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../../assets/photos/nm-light.svg'
 
 const Footer = () => {
   return (
@@ -9,8 +8,7 @@ const Footer = () => {
           <a href="#home" className="logo logo-alt">
             <div className="logo-grid">
               <div className="col-a">
-                {/* <i className="icon-bearded-man"></i> */}
-                <img src={Logo} alt="Logo" style={{ color: 'white' }} />
+                <i className="icon-newman"></i>
               </div>
               <div className="col-b">
                 New Man

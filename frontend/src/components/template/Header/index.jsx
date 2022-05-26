@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../../assets/photos/nm-dark.svg'
 
 const Header = () => {
   window.addEventListener('scroll', () => {
@@ -44,13 +43,10 @@ const Header = () => {
   return (
     <header id="header">
       <nav className="container">
-        {/* <a href="#" className="logo">newman<span>barbershop</span>.</a>  */}
         <a href="#home" className="logo">
           <div className="logo-grid">
             <div className="col-a">
-              {/* <i className="icon-bearded-man"></i> */}
-              <img src={Logo} alt="" />
-
+              <i className="icon-newman"></i>
             </div>
             <div className="col-b">
               New Man
