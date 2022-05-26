@@ -2,6 +2,9 @@ import React from 'react';
 import { A11y, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import foto1 from "../../../assets/photos/1.jpg"
+import foto2 from "../../../assets/photos/2.jpg"
+import foto3 from "../../../assets/photos/3.jpg"
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -47,7 +50,7 @@ const Testimonials = () => {
                   qualificados.
                 </p>
                 <cite>
-                  <img src="../../../assets/photos/1.jpg" alt="Foto de Wanderson Souza" />
+                  <img src={foto1} alt="Foto de Wanderson Souza" />
                   Wanderson Souza
                 </cite>
               </blockquote>
@@ -65,7 +68,7 @@ const Testimonials = () => {
 
                 </p>
                 <cite>
-                  <img src="../../../assets/photos/2.jpg" alt="Foto de Luan Falcão" />
+                  <img src={foto2} alt="Foto de Luan Falcão" />
                   Luan Falcão
                 </cite>
               </blockquote>
@@ -81,7 +84,7 @@ const Testimonials = () => {
                   adipisci fugit.
                 </p>
                 <cite>
-                  <img src=".../../../assets/photos/3.jpg" alt="Foto de Francisco Venega" />
+                  <img src={foto3} alt="Foto de Francisco Venega" />
                   Francis Venega
                 </cite>
               </blockquote>

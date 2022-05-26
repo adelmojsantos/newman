@@ -2,8 +2,6 @@ import React from 'react';
 
 import HomePicture from '../../../assets/photos/home-picture.jpg'
 
-// import { Container } from './styles';
-
 const Home = () => {
   return (
     <section className="section" id="home">

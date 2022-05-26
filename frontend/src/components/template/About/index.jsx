@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import AboutPicture from '../../../assets/photos/about-picture.jpg'
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className="container grid">
         <div className="image">
           <img
-            src="https://media.istockphoto.com/photos/shot-of-a-handsome-young-barber-standing-alone-in-his-salon-picture-id1365608023?b=1&k=20&m=1365608023&s=170667a&w=0&h=hkcbZSXI3AXG-a44bFrjdHFKF-XRwBGUbVx5NSkur3s="
+            src={AboutPicture}
             alt="Homem sorrindo apoiado na cadeira de barbeiro" />
         </div>
         <div className="text">

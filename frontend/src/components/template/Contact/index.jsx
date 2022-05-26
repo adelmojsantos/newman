@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import { Container } from './styles';
-
 const Contact = () => {
   return (
     <section className="section" id="contact">
