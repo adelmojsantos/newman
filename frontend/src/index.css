@@ -10,8 +10,10 @@
   }
 
   img {
-    width: 100%;
-    height: auto;
+    min-width: 2.5rem;
+    max-width: 100%;
+    min-height: 2.5rem;
+    max-height: 100%;
   }
 
   ul {
@@ -174,6 +176,7 @@
   .logo {
     color: var(--title-color);
     font: 700 1.31rem var(--title-font);
+    width: 100%;
   }
 
   .logo span {
@@ -587,7 +590,7 @@
     justify-content: flex-start;
   }
 
-  footer .logo i {
+  footer .logo img {
     font-size: 3.1rem;
     color: var(--body-color);
   }
@@ -597,11 +600,12 @@
     margin-bottom: 0.75rem;
   }
 
-  footer i {
+  footer img {
     font-size: 1.5rem;
     color: var(--text-color-light);
     transition: color .3s;
   }
+
 
   footer .social {
     grid-auto-flow: column;

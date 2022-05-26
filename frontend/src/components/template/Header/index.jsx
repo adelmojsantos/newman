@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../../assets/photos/nm-dark.svg'
 
 const Header = () => {
   window.addEventListener('scroll', () => {
@@ -47,7 +48,9 @@ const Header = () => {
         <a href="#home" className="logo">
           <div className="logo-grid">
             <div className="col-a">
-              <i className="icon-bearded-man"></i>
+              {/* <i className="icon-bearded-man"></i> */}
+              <img src={Logo} alt="" />
+
             </div>
             <div className="col-b">
               New Man
@@ -60,7 +63,7 @@ const Header = () => {
 
         <div className="menu">
           <ul className="grid">
-            <li><a onClick={() => OnCloseMenu()} className="title" href="#home">Início</a></li>
+            <li><a onClick={() => OnCloseMenu()} className="title active" href="#home">Início</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#about">Sobre</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#services">Serviços</a></li>
             <li><a onClick={() => OnCloseMenu()} className="title" href="#course">New Man Academy</a></li>
